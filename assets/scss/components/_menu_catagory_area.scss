@@ -3,6 +3,7 @@
   top: $header-height; // 헤더영역(fixed)때문에
   margin-top: 10px;
   background-color: #fff;
+  z-index: 5500;
 
   .common-inner {
     position: relative;
