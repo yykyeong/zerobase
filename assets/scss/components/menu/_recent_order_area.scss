@@ -29,17 +29,18 @@
 
   .recent-menu-item {
     box-sizing: content-box; //가로폭 정확하게 해야하는데 양쪽에 패딩값을 넣어줘야함 
-    padding-left: 16px;
+    position: relative;
+    padding-right: 16px;
     width: 80px;
     text-align: center;
     &.is-ordered {
-      padding-right: 16px;
+      padding-left: 16px;
       border-right: 1px solid $booking-color-bg102;
-    }
-    &:last-child {
-      padding-right: $m-padding;
-    }
+      & + .recent-menu-item {
+          padding-left: 16px;
+      }
   }
+}
 
   .menu-img-area {
     position: relative;
@@ -52,7 +53,8 @@
 
   .badge-popular {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     padding: 0 5px;
     border-radius: 10px;
     line-height: 16px; // 두줄 안된다는 전제 하에 객체 높이 정하는 것
@@ -70,7 +72,9 @@
 
   .badge-cart {
     position: absolute;
-    bottom: 0; right: 0;
+    top: 50px;
+    right: 16px;
+    display: flex;
     padding: 6px;
     border: 1px solid $booking-color-border150;
     border-radius: 100%;
