@@ -1,4 +1,5 @@
 .container {
+  min-height: 100vh; //모바일에서 꽉차게
   background-color: $booking-color-border151;
   &:not(.order) {
     padding-top: $place-header-height + $place-tab-height;
