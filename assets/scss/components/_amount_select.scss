@@ -18,9 +18,12 @@
       background-color: #00d780;
       color: #fff;
     }
+
+    &.disabled, //버튼자체에 넣으면 안먹을수도있으니까
     &:disabled {
       color: $booking-color-border102;
     }
+
     &::before {
       content: '';
       display: block;
