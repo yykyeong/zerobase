@@ -32,4 +32,30 @@
     }
 }
 
+  .btn-order-area {
+    margin-top: 20px;
+    @include common-inner;
+
+    .btn-order {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px $m-padding 0;
+      width: calc(100% - #{$m-padding}*2);
+      height: 50px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 700;
+      background-color: $green;
+      color: #fff;
+      .ico-n-logo {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  .go-to-top {
+    padding: 20px 0;
+    background-color: none;
+  }
 }
