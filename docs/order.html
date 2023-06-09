@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>제로베이스 마크업</title>
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
           <img src="../assets/images/ico-close-white.svg" alt="닫기" class="ico-close">
         </button>
       </div>
-      <!-- //주문서 타이틀 -->
+      <!-- // 주문서 타이틀 -->
 
       <!-- 주문서 메뉴 -->
       <div class="order-content">
@@ -33,17 +33,18 @@
               </svg>
             </p>
             <p class="desc">가지고 가실 수 있게 준비됩니다.</p>
-            <p class="count">담은 메뉴 : 3개</p>
+            <p class="count">담은 메뉴: 3개</p>
           </div>
+
           <div class="order-content-body">
-            <!-- 담은메뉴없음 -->
+            <!-- 담은 메뉴 없음 -->
             <div class="no-order hidden">
               <img class="icon" src="../assets/images/ico-exclaim.svg" alt="" aria-hidden="true">
               <p class="txt">담은 메뉴가 없습니다.</p>
             </div>
-            <!-- //담은메뉴없음 -->
+            <!-- // 담은 메뉴 없음 -->
 
-            <!-- 담은메뉴있음 -->
+            <!-- 담은 메뉴 있음 -->
             <ul class="menu-list">
               <li class="menu-item">
                 <div class="menu-img-area">
@@ -99,17 +100,66 @@
               <span class="total-txt">총 주문금액</span>
               <span class="total-price">29,997원</span>
             </div>
-            <!-- //담은메뉴있음 -->
+            <!-- // 담은 메뉴 있음 -->
           </div>
         </div>
 
         <a href="#" class="btn-menu-add"><i class="ico-add"></i>메뉴추가</a>
-        <!-- //주문서 메뉴 -->
       </div>
+      <!-- // 주문서 메뉴 -->
 
       <!-- 주문자 정보 -->
-      
-      <!-- //주문자 정보 -->
+      <div class="order-content-extra">
+        <div class="common-inner">
+          <div class="orderer-info-area">
+            <p class="title">주문자 정보</p>
+            <ul class="info-list">
+              <li class="info-item">
+                <p class="info-title">일회용 수저, 포크</p>
+                <div class="option-group">
+                  <div class="option-item">
+                    <input type="radio" id="need" class="input-radio" name="disposables" checked>
+                    <label for="need" class="input-radio-button need">필요해요</label>
+                  </div>
+                  <div class="option-item">
+                    <input type="radio" id="no-need" class="input-radio" name="disposables" checked>
+                    <label for="no-need" class="input-radio-button no-need">필요없어요</label>
+                  </div>
+                </div>
+              </li>
+              <li class="info-item">
+                <p class="info-title">요청사항</p>
+                <input type="text" placeholder="(선택) 요청사항을 입력해 주세요" class="input-text">
+              </li>
+              <li class="info-item">
+                <p class="info-title">주문자 연락처<span class="fw700 color-point"> (필수)</span></p> 
+                <input type="text" placeholder="연락처를 입력해 주세요." class="input-text" required>
+              </li>
+            </ul>
+          </div>
+
+          <div class="place-map-area">
+
+          </div>
+
+          <div class="agreement-area">
+
+          </div>
+        </div>
+      </div>
+      <!-- // 주문자 정보 -->
+
+      <!-- 주문하기 버튼 -->
+      <!-- // 주문하기 버튼 -->
+
+      <!-- 맨위로 -->
+      <!-- // 맨위로 -->
     </div>
+
+    <!-- 모달 -->
+
+    <!-- // 모달 -->
   </div>
 </body>
+
+</html>
