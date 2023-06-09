@@ -43,6 +43,11 @@
     letter-spacing: -0.3px;
   }
 
+  .btn-toggle { // 버튼 영역 확보
+    display: flex; //미묘한 여백 없애기
+    margin: -16px;
+    padding: 16px;
+  }
   .period {
     font-size: 14px;
     letter-spacing: -0.3px;

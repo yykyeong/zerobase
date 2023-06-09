@@ -21,6 +21,11 @@
   // 상하좌우 꽉채운다
   background-color: rgba(#000, 0.8);
   z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.3s ease; //opacity가 변경될때는? 이래라.
+  &.hidden {
+    opacity: 0;
+  }
 
   &.light {
     background-color: rgba(0,0,0,0.4);
